@@ -1,0 +1,16 @@
+[project]
+name = "pethon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "hyprpy>=0.2.0",
+    "pyqt6>=6.9.1",
+    "pyside6>=6.9.2",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+]
