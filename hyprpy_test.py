@@ -34,6 +34,7 @@ if special_workspace:
 # Show a desktop notification every time we switch to workspace 6
 def on_workspace_changed(sender, **kwargs):
     workspace_id = kwargs.get("workspace_id")
+    print(f"now on workspace: {workspace_id}")
     if workspace_id == 6:
         run_or_fail(["notify-send", "We are on workspace 6."])
 
